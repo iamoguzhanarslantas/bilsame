@@ -1,4 +1,1 @@
-class Config {
-  static const appBarTitle = 'Bilsame';
-  static const appTitle = 'Bilsame';
-}
+export 'app_config.dart';
