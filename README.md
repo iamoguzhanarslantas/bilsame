@@ -1,16 +1,11 @@
-# bilsame
+## Setup
 
-A new Flutter project.
+* Setup local SSH keys with bitbucket (need for pub get - fetching bilsame package)
+* Setup lefthook
+    * https://github.com/evilmartians/lefthook/blob/master/docs/other.md#installation
+    * run ```lefthook install``` in project root directory
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Run code generation
+* flutter pub run build_runner build --delete-conflicting-outputs
+or can watch changes
+* flutter pub run build_runner watch --delete-conflicting-outputs
