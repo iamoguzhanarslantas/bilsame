@@ -2,7 +2,7 @@
 
 * Setup local SSH keys with bitbucket (need for pub get - fetching bilsame package)
 * Setup lefthook
-    * https://github.com/evilmartians/lefthook/blob/master/docs/other.md#installation
+    * https://github.com/evilmartians/lefthook/
     * run ```lefthook install``` in project root directory
 
 ### Run code generation

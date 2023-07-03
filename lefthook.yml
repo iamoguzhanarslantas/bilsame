@@ -1,0 +1,10 @@
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      run: flutter format .
+pre-push:
+  parallel: true
+  commands:
+    linter:
+      run: flutter analyze
