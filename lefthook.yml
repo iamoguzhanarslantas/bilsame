@@ -2,7 +2,7 @@ pre-commit:
   parallel: true
   commands:
     format:
-      run: flutter format .
+      run: dart format .
 pre-push:
   parallel: true
   commands:
