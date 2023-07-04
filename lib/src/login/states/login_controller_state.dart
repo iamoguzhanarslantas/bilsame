@@ -8,4 +8,9 @@ class LoginControllerState with _$LoginControllerState {
     required bool isLoading,
     required String? error,
   }) = _LoginControllerState;
+
+  factory LoginControllerState.init() => const LoginControllerState(
+        isLoading: false,
+        error: null,
+      );
 }

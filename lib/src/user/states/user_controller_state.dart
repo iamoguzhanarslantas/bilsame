@@ -8,4 +8,9 @@ class UserControllerState with _$UserControllerState {
     required String? name,
     required String? email,
   }) = _UserControllerState;
+
+  factory UserControllerState.init() => const UserControllerState(
+        name: '',
+        email: '',
+      );
 }

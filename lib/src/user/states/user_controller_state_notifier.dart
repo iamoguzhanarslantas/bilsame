@@ -12,7 +12,7 @@ class UserControllerStateNotifier extends StateNotifier<UserControllerState> {
   UserControllerStateNotifier(
     this.ref, {
     required this.userRepository,
-  }) : super(const UserControllerState(name: '', email: ''));
+  }) : super(UserControllerState.init());
 
   Future<void> readUserInfo() async {
     try {

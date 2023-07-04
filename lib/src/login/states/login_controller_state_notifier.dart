@@ -12,7 +12,7 @@ class LoginControllerStateNotifier extends StateNotifier<LoginControllerState> {
   LoginControllerStateNotifier(
     this.ref, {
     required this.authenticationRepository,
-  }) : super(const LoginControllerState(isLoading: false, error: null));
+  }) : super(LoginControllerState.init());
 
   Future<void> loginByGoogle() async {
     logger.i('user login by google');
