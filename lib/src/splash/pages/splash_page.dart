@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends HookConsumerWidget {
   static const routeName = '/';
   const SplashPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return const Scaffold(
       body: Center(
-        child: Text('Splash Page'),
+        child: CircularProgressIndicator(),
       ),
     );
   }
