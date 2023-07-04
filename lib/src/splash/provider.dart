@@ -4,8 +4,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:bilsame/src/splash/splash.dart'
     show SplashPageState, SplashPageStateNotifier;
 
-final firebaseAuthProvider =
-    Provider((ref) => FirebaseAuth.instance.currentUser);
+final firebaseAuthProvider = Provider(
+  (ref) => FirebaseAuth.instance.currentUser,
+);
 
 final splashPageProvider =
     StateNotifierProvider<SplashPageStateNotifier, SplashPageState>(

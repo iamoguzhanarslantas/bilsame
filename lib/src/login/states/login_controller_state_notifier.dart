@@ -22,7 +22,7 @@ class LoginControllerStateNotifier extends StateNotifier<LoginControllerState> {
       final currentUser = authenticationRepository.getCurrentUser();
       if (currentUser != null) {
         ref.read(userRepositoryProvider).saveUser(currentUser);
-        state = state.copyWith(isLoading: false);
+        state = LoginControllerState.init();
       } else {
         state = state.copyWith(isLoading: false, error: 'current user null');
         logger.i('current user null');
