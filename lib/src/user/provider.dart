@@ -7,8 +7,9 @@ import 'package:bilsame/src/user/user.dart'
         UserControllerStateNotifier,
         UserRepository;
 
-final userRepositoryProvider =
-    Provider<IUserRepository>((ref) => UserRepository(ref));
+final userRepositoryProvider = Provider<IUserRepository>(
+  (ref) => UserRepository(ref),
+);
 
 final userControllerProvider = StateNotifierProvider.autoDispose<
     UserControllerStateNotifier, UserControllerState>(

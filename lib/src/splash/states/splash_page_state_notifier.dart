@@ -13,7 +13,9 @@ class SplashPageStateNotifier extends StateNotifier<SplashPageState> {
       logger.i('initializeApp');
       state = SplashPageState.init();
       await Firebase.initializeApp(
-          name: 'DrBilsem', options: DefaultFirebaseOptions.currentPlatform);
+        name: 'DrBilsem',
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
 
       state = state.copyWith(appInitialized: true);
     } catch (e) {
